@@ -1,5 +1,17 @@
 .home {
 
+  .header {
+    display: flex; 
+    flex-flow: row wrap; 
+    align-content: space-around;
+    .borders();
+
+    .header-content {
+      padding: 2vh 0; 
+    }
+
+  } //closes header
+
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -26,6 +38,7 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    .borders();
 
     .text-content {
       padding-left: 1%;
@@ -49,7 +62,7 @@
 
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+     border-top: 2px dashed @silver;
     display: flex;
     justify-content: space-between;
 
