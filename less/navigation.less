@@ -1,23 +1,39 @@
 // Navigation Styles here
 
 .navbar {
-   
   width: 100%;
   padding: 20px 6%; 
   display: flex;
   justify-content: space-around;
   .borders();  
+
+@media @mobile {
+  padding: 7px 6%; 
+  .flexes(row wrap, center, stretch);
+  
+} // Closes media query for NavBar
+
+.logo-wrapper {
+  @media @mobile {
+    width: 100%; 
+    text-align: center;
+    padding: 1.25vh 0 1.75vh 0; 
+  }
+}
+
 .nav-wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .flexes(row nowrap, space-between, center);
   width: 30%; 
+
+  @media @mobile {
+    width: 100%; 
+  }
+
   a {
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
-  }
-
+  } // Closes anchors
 } // Closes nav-wrapper
-
 } // Closes Nav

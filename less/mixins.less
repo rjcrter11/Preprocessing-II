@@ -1,5 +1,12 @@
 // Mixins in here
 
+.flexes(@flow, @justify, @align) {
+  flex-flow: @flow; 
+  justify-content: @justify;
+  align-items: @align;
+  
+}
+
 .borders() {
   border-bottom: 2px dashed @silver; 
   
