@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width,
+      initial-scale=1.0">
+
+    <title>Fun Bus Travel Agency - Solution</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto"
+      rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <header class="destination-header">
+        <h1>Where do you want to take the Fun Bus?</h1>
+        <p>Fill out this form for vacation fun!</p>
+      </header>
+
+      <form action='' method='get' class='destination-form'>
+        <div class='form-row'>
+          <label for='full-name'>Name</label>
+          <input id='full-name' name='full-name' type='text'/>
+          <label for='email'>Email</label>
+          <input id='email' name='email' type='email'
+            placeholder='joe@gmail.com'/>
+          <label for='phone-number'>Phone Number</label>
+          <input id='phone-number' name='phone-number' type='text'/>
+        </div>
+        <div class="spot-row">
+          <fieldset>
+            <legend>Where To?</legend>
+            <input type="radio" id='vacay1' name='where'value='sunny'>
+            <label for="vacay1" class='radio-label'>Fun in the Sun</label>
+            <input type="radio" id='vacay2' name='where' value='mountain'>
+            <label for="vacay2" class='radio-label'>Mountain Excursion</label>
+            <input type="radio" id='vacay3' name='where' value='island'>
+            <label for="vacay3" class='radio-label'>Island Getaway</label>
+          </fieldset>
+        </div>
+        <div class="form-row">
+          <label for="instructions">Special instructions</label>
+          <textarea name="instructions" id="instructions" cols="30" rows="10">
+          </textarea>
+        </div>
+      </form>
+
+
+    </div>
+
+
+  </body>
